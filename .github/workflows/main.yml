@@ -18,8 +18,8 @@ jobs:
         
     - name: Build Goldleaf
       run: |
-        apt-get install -y fakeroot
-        make initial -j$(nproc)
+        sudo apt-get install -y fakeroot
+        sudo make initial -j$(nproc)
         
     - uses: actions/upload-artifact@master
       with:
